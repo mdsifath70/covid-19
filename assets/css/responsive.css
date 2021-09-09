@@ -1,0 +1,130 @@
+/*--------- responsive media CSS CODE ----------*/
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        padding: 0 3%;
+    }
+    #menu_toggle {
+        display: block;
+    }
+    .navbarNav {
+        background: var(--white);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        padding: 2rem;
+        border-top: 0.1rem solid rgb(0 0 0 / 10%);
+        -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: top;
+        -ms-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .navbarNav.active {
+        -webkit-transform: scaleY(1);
+        -ms-transform: scaleY(1);
+        transform: scaleY(1);
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbarNav ul {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .navbarNav ul li a {
+        display: block;
+        margin: 1.5rem 0;
+    }
+    .prevent .box-container .box {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    }
+    .symptoms .column .main_img img {
+        display: none;
+    }
+    .hand-wash .column .main_img img {
+        display: none;
+    }
+    .scroll_top {
+        right: 2rem;
+        bottom: 6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%;
+    }
+    .primary_btn {
+        padding: 0.5rem 1.6rem;
+    }
+    .navbarNav ul li a {
+        margin: 1rem 0;
+    }
+    .home .content h1 {
+        font-size: 4rem;
+    }
+    .home .content h3 {
+        font-size: 3.5rem;
+    }
+    .prevent .box-container .box {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .scroll_top img {
+        width: 6.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .content h1 {
+        font-size: 3.3rem;
+    }
+    .home .content h3 {
+        font-size: 2.3rem;
+    }
+    .symptoms .column .box_container .box img {
+        max-width: 14rem;
+    }
+    .precautions .column .box_container .box {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+        flex-flow: column;
+        text-align: center;
+    }
+    .doctor .box_container .box {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    }
+    .doctor .box_container .box img {
+        width: 18rem;
+        height: 18rem;
+    }
+    .scroll_top {
+        right: 1.5rem;
+        bottom: 4rem;
+    }
+    .scroll_top img {
+        width: 5rem;
+    }
+}
+
+
+/*
+=================================   
+        THE END 
+=================================   
+ */
